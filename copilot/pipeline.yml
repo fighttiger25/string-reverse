@@ -15,7 +15,7 @@ source:
   # has the following properties: repository, branch.
   properties:
     branch: master
-    repository: https://github.com/nathanpeck/string-reverse
+    repository: https://github.com/fighttiger25/string-reverse
     # Optional: specify the name of an existing CodeStar Connections connection.
     # connection_name: a-connection
 
@@ -27,7 +27,4 @@ stages:
       # Optional: use test commands to validate this stage of your build.
       test_commands:
         - npm install --prefix test
-        - APP_URL=https://reverse.test.std.string.services npm test --prefix test
-
-    - # The name of the environment to deploy to.
-      name: prod
+        - APP_URL=https://reverse.test.std.aws-sctv.ch npm test --prefix test
